@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "3e60cf86-9970-49a7-bcb9-aeeb21afa913",
+		"name": "bai tap sequelize db_food",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Lấy danh sách like theo nhà hàng",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/api/food/layDanhSachLikeTheoNhaHang/2",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"food",
+						"layDanhSachLikeTheoNhaHang",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lấy danh sách like theo user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/api/food/layDanhSachLikeTheoUser/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"food",
+						"layDanhSachLikeTheoUser",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "like nhà hàng",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"3\",\r\n    \"res_id\":\"3\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/api/food/likeNhaHang",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"food",
+						"likeNhaHang"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "đánh giá nhà hàng",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"4\",\r\n    \"res_id\":\"2\",\r\n    \"amount\":\"3\"    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/api/food/rateNhaHang",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"food",
+						"rateNhaHang"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lấy danh sách đánh giá theo nhà hàng",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/api/food/layDanhSachDanhGiaTheoNhaHang/2",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"food",
+						"layDanhSachDanhGiaTheoNhaHang",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lấy danh sách đánh giá theo user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/api/food/layDanhSachDanhGiaTheoUser/2",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"food",
+						"layDanhSachDanhGiaTheoUser",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/api/food/order",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"food",
+						"order"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "domain",
+			"value": "localhost:8080",
+			"type": "default"
+		}
+	]
+}
